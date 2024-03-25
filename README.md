@@ -65,3 +65,31 @@ Contributions are welcome. Please submit pull requests or create issues for bugs
 ## License
 
 This project is open-sourced under the MIT License. See the LICENSE file for more details.
+
+## Model Attributes
+
+- **`psgc`**: A string representing the Philippine Standard Geographic Code (PSGC) of the location. It must be exactly 10 characters long, ensuring a valid and precise identification code for each location.
+
+- **`name`**: The common name of the location. This attribute stores the name as a string, allowing for easy identification and display.
+
+- **`longname`**: A longer, more descriptive name for the location. This could include additional identifiers or hierarchical geographic information to provide more context about the location.
+
+- **`geographicLevel`**: A string that indicates the geographic level of the location, such as "Region", "Province", "Municipality", etc. This helps in categorizing locations within the geographic hierarchy.
+
+- **`oldNames`**: Contains any previous names for the location as a string. This is useful for historical data mapping and for users familiar with an older name.
+
+- **`cityClass`**: A classification for cities, stored as a string. This can include categories like "Highly Urbanized", "Component", etc., providing insight into the urban status of the location.
+
+- **`incomeClassification`**: The income classification of the location, typically for municipalities and cities, indicating economic status.
+
+- **`isRural`**: A boolean indicating whether the location is considered rural. This binary classification is critical for demographic and geographic analyses.
+
+- **`population`**: An integer representing the population of the location based on a specific census year. It is crucial for understanding the scale and density of the area.
+
+- **`status`**: A numerical status code that represents the processing or validation state of the location data within the system.
+
+- **`coords`** (Optional): An object based on the `CoordinatesSchema`, describing the geographic coordinates (latitude and longitude) of the location. This is optional to accommodate locations that have not yet been geocoded.
+
+- **`boundingBox`** (Optional): Defined by the `BoundingBoxSchema`, this object provides the geographic bounding box of the location, useful for mapping and spatial queries.
+
+- **`osmresult`** (Optional): An object conforming to the `OSMSchema`, containing data from an OpenStreetMap geocoding result. This includes detailed information like the place ID, latitude/longitude, and bounding box among others, enriching the location data with external geographic information.
