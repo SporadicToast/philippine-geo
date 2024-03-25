@@ -41,7 +41,7 @@ async function getPSGCLongName(code: string, name: string) {
         return `${name}, ${parsedLocation.longname}`
     }
 }
-const psgcFile = path.join('.','PSGC-4Q-2023-Publication-Datafile.csv');
+const psgcFile = path.join('.','dumps','PSGC-4Q-2023-Publication-Datafile.csv');
 
 const initDump = fs.createReadStream(psgcFile).pipe(csvParser())
     .on('data', (data) => {
