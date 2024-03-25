@@ -2,7 +2,7 @@
 
 ## Overview
 
-The PSGC Geocoder is a comprehensive Node.js application designed to parse, process, and geocode location data from the Philippine Standard Geographic Code (PSGC). Utilizing data transformations, MongoDB for storage, and OpenStreetMap for geocoding, this application enriches location data with geographic coordinates and other relevant information.
+The PSGC Geocoder is a comprehensive Node.js application designed to parse, process, and geocode location data from the Philippine Standard Geographic Code (PSGC). Utilizing data transformations, MongoDB for storage, and OpenStreetMap for geocoding, this application enriches location data with geographic coordinates and other relevant information. This is used for [new-sismika](https://github.com/Dox-Dev/new-sismika) - An interactive Earthquake event visualizer utilizing modern web apps.
 
 ## Dumps
 
@@ -24,7 +24,7 @@ The PSGC entries with their Nominatim requests are available in the `dumps` fold
 ## Installation
 
 1. Clone the repository to your local machine.
-2. Navigate to the project directory and run `npm install` to install dependencies.
+2. Navigate to the project directory and run `pnpm install` to install dependencies.
 3. Ensure MongoDB is running and accessible.
 4. Set up environment variables:
    - `MONGODB_URI`: The URI for your MongoDB database.
