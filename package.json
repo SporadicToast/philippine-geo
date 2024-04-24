@@ -6,7 +6,8 @@
   "scripts": {
     "dbstart": "mongod --dbpath ./data",
     "start": "ts-node index.ts",
-    "request": "ts-node requester.ts"
+    "request": "ts-node requester.ts",
+    "geolocate": "ts-node geolocator.ts"
   },
   "keywords": [],
   "author": "",
